@@ -16,7 +16,7 @@ def login(request):
         password = request.POST['pass'] 
         user[username] = password
         print(user)
-        return  HttpResponse('<h1>Succes ..!</h1>')
+        return  HttpResponse(('<h1>Welcome {} ..!</h1>').format(username.upper()))
 
     else:
         return  HttpResponse(temp.render({},request))
