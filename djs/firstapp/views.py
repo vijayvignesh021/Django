@@ -12,8 +12,8 @@ def login(request):
     global user
     if request.method=="POST":
         print("values are",[x for x in request.POST])
-        username = request.POST['name']
-        password = request.POST['pass'] 
+        username = request.POST['email']
+        password = request.POST['password'] 
         user[username] = password
         print(user)
         return  HttpResponse(('<h1>Welcome {} ..!</h1>').format(username.upper()))
