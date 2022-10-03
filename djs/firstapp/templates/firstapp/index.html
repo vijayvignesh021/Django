@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,3 +44,24 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/static/firstapp/">
+    <h1>Firstapp</h1>
+</head>
+<body>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <label for="name">Username :</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="pass">Password :</label>
+        <input type="text" id="pass" name="pass"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+>>>>>>> 58c2781f6e12362f31ad786b6796c2773cf0ab3e
