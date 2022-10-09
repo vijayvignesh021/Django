@@ -21,4 +21,3 @@ def login(request):
     else:
         return  HttpResponse(temp.render({},request))
 
-
